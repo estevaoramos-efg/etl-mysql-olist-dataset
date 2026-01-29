@@ -1,7 +1,7 @@
 ![Banner do Projeto](assets/banner.png)
 
 ### 🧹 Limpeza de Dados (Data Cleaning)
-O script completo de limpeza pode ser encontrado em [`scripts/03_data_cleaning.sql`](scripts/03_data_cleaning.sql).
+O script completo de limpeza pode ser encontrado em [`scripts/03_data_cleaning.sql`](scripts/cleaning.sql).
 O principal desafio foi a remoção de duplicatas na tabela de avaliações, resolvida com *Self-Join*:
 
 <details>
