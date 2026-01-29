@@ -12,7 +12,9 @@ O principal desafio foi a remoção de duplicatas na tabela de avaliações, res
   DELETE t1 FROM olist_order_avaliacoes t1
   JOIN olist_order_avaliacoes t2
   WHERE t1.review_id = t2.review_id 
-    AND t1.aux > t2.aux; </details>
+    AND t1.aux > t2.aux;
+  ```
+</details>
 
 # Projeto Integrador: ETL de E-commerce (Olist) com MySQL
 
