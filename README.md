@@ -1,5 +1,19 @@
 ![Banner do Projeto](assets/banner.png)
 
+### 🧹 Limpeza de Dados (Data Cleaning)
+O script completo de limpeza pode ser encontrado em [`scripts/03_data_cleaning.sql`](scripts/03_data_cleaning.sql).
+O principal desafio foi a remoção de duplicatas na tabela de avaliações, resolvida com *Self-Join*:
+
+<details>
+  <summary>Clique para ver o código de Deduplicação</summary>
+
+  ```sql
+  -- Remove duplicatas mantendo apenas o registro original (menor ID auxiliar)
+  DELETE t1 FROM olist_order_avaliacoes t1
+  JOIN olist_order_avaliacoes t2
+  WHERE t1.review_id = t2.review_id 
+    AND t1.aux > t2.aux;
+
 # Projeto Integrador: ETL de E-commerce (Olist) com MySQL
 
 Este repositório documenta o processo de Extração, Transformação e Carga (ETL) dos dados públicos da Olist, realizado integralmente em **MySQL**. O objetivo foi simular um cenário real de engenharia de dados, transformando arquivos CSV brutos em um Data Warehouse confiável para análise de negócios.
