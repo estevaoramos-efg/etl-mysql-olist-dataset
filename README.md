@@ -13,7 +13,7 @@ O principal desafio foi a remoção de duplicatas na tabela de avaliações, res
   JOIN olist_order_avaliacoes t2
   WHERE t1.review_id = t2.review_id 
     AND t1.aux > t2.aux;
-</details>
+<details>
 
 # Projeto Integrador: ETL de E-commerce (Olist) com MySQL
 
